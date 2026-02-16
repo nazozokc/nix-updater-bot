@@ -1,5 +1,5 @@
 import consola from "npm:consola";
-import { acquireLock, releaseLock } from "./lock.ts";
+import { acquirelock, releaselock } from "./lock.ts";
 
 async function run(cmd: string[]) {
   consola.debug(`Running: ${cmd.join(" ")}`);
