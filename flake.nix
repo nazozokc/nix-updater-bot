@@ -19,6 +19,8 @@
             deno
             neovim
             git
+            gh
+            lazygit
             nix
           ];
 
