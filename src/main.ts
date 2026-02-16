@@ -38,7 +38,7 @@ async function hasFlakeChanged(): Promise<boolean> {
 async function main() {
  consola.info("Nix update bot started");
 
- await acquireLock();
+ await acquirelock();
 
   consola.start("Running nix flake update...");
   await run(["nix", "flake", "update"]);
@@ -56,7 +56,7 @@ async function main() {
     consola.info("No Changes detected");
   }
 
-  await releaseLock();
+  await releaselock();
   consola.info("Bot finished");
 }
 
